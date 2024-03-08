@@ -1,0 +1,10 @@
+@media screen and (min-width: 80rem) {
+    .container {
+      margin: 1em 2em;
+    }
+    img,
+    picture,
+    video {
+      max-width: 100%;
+    }
+  }
