@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="card login" id="login">
+      <h2><i class="fas fa-key"></i> Sign In</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input name="email" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input name="password" type="password" />
+        </div>
+        <button type="submit">Sign In</button>
+      </form>
+      <p class="link-login">
+        Don t have account yet?
+        <span class="switchText" onclick="switchToSignUp()"> Sign up!</span>
+      </p>
+    </div>
+    <div class="card signup" id="signup">
+      <h2><i class="fas fa-user"></i> New account</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input name="email" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input name="password" type="password" />
+        </div>
+        <div class="form-group">
+          <label for="password-repeat">Password repeat:</label>
+          <input name="password-repeat" type="password" />
+        </div>
+        <button type="submit">Create</button>
+      </form>
+      <p class="link-signUp">
+        Aready had an account?
+        <span class="switchText" onclick="switchToLogin()"> Sign in!</span>
+      </p>
+    </div>
+    <script src="login script.js"></script>
+  </body>
+</html>
