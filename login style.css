@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+    background: rgb(34, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  input {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+  }
+  button:hover {
+    cursor: pointer;
+    background: rgb(34, 32, 32);
+    color: white;
+    animation: shake 0.5s ease-in-out;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(87, 33, 33, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 15px;
+  }
+  .login {
+    z-index: 2;
+    transform: rotate(-5deg);
+  }
+  .signup {
+    z-index: 1;
+    transform: rotate(5deg);
+  }
+  .switchText {
+    color: blue;
+    text-decoration: underline;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  @keyframes toRightLogin {
+    0% {
+      transform: translateX(0px) rotate(5deg);
+    }
+    100% {
+      transform: translateX(500px) rotate(5deg);
+    }
+  }
+  @keyframes toRightSignup {
+    0% {
+      transform: translateX(0px) rotate(-5deg);
+    }
+    100% {
+      transform: translateX(500px) rotate(-5deg);
+    }
+  }
+  @keyframes toPosition {
+    0% {
+      transform: translateX(500px) rotate(5deg);
+    }
+    100% {
+      transform: translateX(0px) rotate(5deg);
+    }
+  }
+  @keyframes toPositionSignup {
+    0% {
+      transform: translateX(500px) rotate(-5deg);
+    }
+    100% {
+      transform: translateX(0px) rotate(-5deg);
+    }
+  }
